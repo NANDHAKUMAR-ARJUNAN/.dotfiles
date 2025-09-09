@@ -43,7 +43,7 @@ dummywall {
     expand:                      false;
     orientation:                 horizontal;
     children:                    [ "mode-switcher" , "inputbar" ];
-    background-image:            url("~/Downloads/bleach2.jpg", height);
+    background-image:            url("~/.config/rofi/assets/bleach2.jpg", height);
 }
 
 

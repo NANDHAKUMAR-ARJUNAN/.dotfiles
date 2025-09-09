@@ -1,0 +1,20 @@
+[global]
+font = JetBrainsMono Nerd Font 16
+markup = full
+format = "\n<b>%s</b>%b"
+alignment = center
+origin = bottom-right
+offset = (20, 20)
+padding = 10
+corner_radius = 10
+frame_width = 0
+frame_color = "#7aa2f7"
+background = "#1a1b26"
+width = (450, 600)
+foreground = "#c0caf5"
+max_icon_size = 120
+
+[rule]
+appname = "Spotify"
+format = ""
+timeout = 1
