@@ -1,5 +1,6 @@
 #!/bin/bash
 
+DIR="$HOME/.config/hypr"
 USER_NAME="$USER"
 HOST_NAME="$(hostname)"
 DATE_STR="$(date '+%Y-%m-%d')"
@@ -18,7 +19,7 @@ LAST_STATUS=$(cat "$PREV_STATUS_FILE")
 
 if [[ "$LAST_STATUS" != "$CURR_STATUS" ]]; then
   if [[ "$CURR_STATUS" == "charging" ]]; then
-    dunstify -i /home/kenpachi-zaraki/.config/hypr/scripts/dunst/assets/charging.jpg -u low \
+    dunstify -i "$DIR/scripts/dunst/assets/charging.jpg  low" -u low \
       -h string:x-dunst-stack-tag:custominfo \
       -t 2000 \
       " " \
@@ -26,7 +27,7 @@ if [[ "$LAST_STATUS" != "$CURR_STATUS" ]]; then
 
   elif [[ "$CURR_STATUS" == "discharging" ]]; then
 
-    dunstify -i /home/kenpachi-zaraki/.config/hypr/scripts/dunst/assets/charging.jpg -u low \
+    dunstify -i "$DIR/scripts/dunst/assets/charging.jpg " -u low \
       -h string:x-dunst-stack-tag:custominfo \
       -t 2000 \
       " " \
@@ -36,7 +37,7 @@ if [[ "$LAST_STATUS" != "$CURR_STATUS" ]]; then
 
 fi
 if [[ $1 == "get" ]]; then
-  dunstify -i /home/kenpachi-zaraki/.config/hypr/scripts/dunst/assets/battery-svgrepo-com.svg -u low \
+  dunstify -i "$DIR/scripts/dunst/assets/battery-svgrepo-com.svg " -u low \
     -h string:x-dunst-stack-tag:custominfo \
     -t 3000 \
     " " \

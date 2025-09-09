@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
+DIR="$HOME/.config/hypr"
 USER_NAME="$USER"
 HOST_NAME="$(hostname)"
 DATE_STR="$(date '+%Y-%m-%d')"
-ICON_DIR="/home/kenpachi-zaraki/.config/hypr/scripts/dunst/assets"
+ICON_DIR="$DIR/scripts/dunst/assets"
 
 # Check mute status
 IS_MUTED=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q '\[MUTED\]' && echo "yes" || echo "no")
