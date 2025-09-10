@@ -30,7 +30,7 @@ hyprctl setcursor 'Bibata-Modern-Ice' 28
 gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Ice"
 gsettings set org.gnome.desktop.interface cursor-size 28
 gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-dark"
-gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-Dark"
+#gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-Dark"
 
 # -------------------------------
 # Clipboard monitoring

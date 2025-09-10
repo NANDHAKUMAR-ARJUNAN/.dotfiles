@@ -25,6 +25,9 @@ yay -Syu --noconfirm \
   yazi dunst tmux zoxide bat eza fzf fd ripgrep cliphist wl-clipboard \
   wget vim git
 
+# installing whitsur gtk icon themes !
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+./install.sh
 echo "Installing starship prompt"
 curl -sS https://starship.rs/install.sh | sh
 
@@ -59,7 +62,7 @@ chsh -s /usr/bin/zsh
 echo "Installation finished successfully !"
 read -p "Reboot required after installation [y/n]: " value
 if [[ "$value" == "y" ]]; then
-  reboot
+  sudo reboot
 else
   exit 1
 fi
