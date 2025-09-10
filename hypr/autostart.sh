@@ -8,7 +8,7 @@ DIR="$HOME/.config/hypr"
 # Wallpapers
 # Start swww daemon and set wallpaper
 swww-daemon &
-swww img "$HOME/Downloads/bleach5.jpg" --transition-type grow --resize fill &
+swww img "$HOME/.config/swww/wall.jpg" --transition-type grow --resize fill &
 
 # -------------------------------
 # Notifications
